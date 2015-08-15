@@ -42,41 +42,41 @@
     
     <!-- Dialog info starts here -->
     
-    <div id="transbox" style="z-index:1"></div>
+    <div id="transbox" style="display:none; z-index:1"></div>
     
-    <div id="dialog" style="/*display:none;*/ z-index:2; background-color:black;">
-      <div id="dialog_title" style="background-color:green"><p>Esto es un div</p></div>
+    <div id="dialog" style="/*display:none;*/ z-index:2; background-color:white;">
+      <div id="dialog_title" style="background-color:white"><h2>Título del lugar</h2></div>
       
-      <div id="dialog_img" style="background-color:yellow">
-<!--
-        <img width=20% height=20% src="material/01/01.png"></img>
--->
-        </div>
-      <div id="dialog_text" style="background-color:blue"><p align="left">Texto de prueba</p></div>
-      <div id="dialog_audio" style="background-color:red"><audio></audio></div>
+      <div id="dialog_img">
+        <img width=55% height=55% src="material/01/01.png"></img>
+      </div>
+      <div id="dialog_text"><p align="left">Texto informativo para el lugar.<br/>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in vestibulum arcu. Integer dapibus euismod ipsum sit amet mollis. In id ornare ligula. Nullam molestie risus nulla, ac sodales tellus ultrices et. Duis suscipit sapien nec venenatis tincidunt. Sed ac laoreet lacus. Mauris at nulla metus. Nulla facilisi. Pellentesque vehicula facilisis est, eget posuere lorem consectetur sit amet. In arcu felis, convallis ut dolor rhoncus, aliquet lacinia nisi. Nullam malesuada feugiat varius. Nullam porta erat quis lectus suscipit, ut vulputate sapien imperdiet. Etiam egestas hendrerit libero in dictum. Mauris feugiat urna non mollis auctor. Ut cursus tempus sem, quis hendrerit magna semper eleifend. Curabitur eu pharetra metus, eget dictum arcu.
+
+ </p>
+      </div>
+      <div id="dialog_audio" >
+        <audio controls >
+          <source src="material/01/01.MP3" type="audio/mpeg">
+          Audio no soportado
+          </audio>
+      </div>
     </div>
-
-
 
   <script type="application/javascript">
 
   function open_dialog() {
-    /*var dialog = $(dialog);
+    var dialog = $(dialog);
     // unfocus and desactivate any other component
-    //take any img and disable hvr grow
-    //$(place).each( function(index) {
-      if (this is img)
-        this-=.hvrgrow
-      else if (this is a)
-        
-    }
+    $(transbox).show()
     
     // abrir diálogo
     
     // poner imagen de cargando
     
     // load data and media
-    dialog.css('position:');*/
+    //dialog.css('position:');*/
     
     
     // Una vez cargadas las imágenes el texto y el audio, mostrar todo.
