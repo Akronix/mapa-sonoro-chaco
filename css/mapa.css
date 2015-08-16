@@ -14,7 +14,7 @@ img {
 }
 
 #transbox {
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
   display:block;
@@ -24,13 +24,14 @@ img {
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin: 5%;
   background-color: gray;
+  border-radius: 5px;
 }
 
 #dialog {
   border: medium solid gray;
-  border-radius: 25px;
+  border-radius: 15px;
   /* Centering on the screen: */
-  position:absolute;
+  position: fixed;
   top:50%;
   left:50%;
   width:50%; 
@@ -39,7 +40,7 @@ img {
 }
 
 #dialog_title {
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px 15px 0 0;
   text-align: center;
   vertical-align: middle;
   border-bottom: medium solid gray;
