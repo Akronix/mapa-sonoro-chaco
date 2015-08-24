@@ -23,7 +23,7 @@ img {
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin: 5%;
-  background-color: gray;
+  background-color: black;
   border-radius: 5px;
 }
 

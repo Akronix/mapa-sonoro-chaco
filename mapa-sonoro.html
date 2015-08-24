@@ -15,7 +15,7 @@
     html, body { margin: 0; padding: 0; }-->
 </style>
   <link href="css/mapa.css" rel="stylesheet" media="all">
-  <script type="text/javascript" src="js/lib/zepto.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>    
@@ -41,7 +41,7 @@
     
     
     <!-- Places to listen to -->
-    <a class="place" id="01" href="#" onclick="open_dialog()"> <img src="material/01/01.png" height=10px witdth=10px alt="Lugar 1" class="place hvr-grow" style="left: 100px; top: 100px" /> </a>
+    <a class="place" id="01" href="#01" onclick="open_dialog()"> <img src="material/01/01.png" height=10px witdth=10px alt="Lugar 1" class="place hvr-grow" style="left: 100px; top: 100px" /> </a>
     
     <a class="place" href="#"> <img src="material/01/01.png" alt="Lugar 1" class="place hvr-grow" style="left: 350px; top: 800px" /> </a>    
     
@@ -52,7 +52,12 @@
     
     <!-- Dialog info starts here -->
     
-    <div id="transbox" style="display:none; z-index:1"></div>
+    <div id="transbox" style="display:none; z-index:1">
+      <button style="text-align:center; float:right; color:#E5E5E5; cursor:pointer;
+      background: transparent none repeat scroll 0% 0%;
+      border: 0px none; margin:none; padding: 2%; font-size: 35px; opacity: 1.0; font-family:monospace;"
+      onclick="close_dialog()">x</button>
+    </div>
     
     <div id="dialog" style="display:none; z-index:2; background-color:white;">
       <div id="dialog_title"><h2>Título del lugar</h2></div>
@@ -77,13 +82,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in vestibulum arcu
   <script type="application/javascript">
     
     function close_dialog() {
-      $(transbox).hide()
-      $(dialog).hide()
+      $(transbox).hide('slow')
+      $(dialog).hide('slow')
+      //document.location="./mapa-sonoro.html"
     }
 
     function open_dialog() {
       // unfocus and desactivate any other component
-      $(transbox).show()
       document.getElementById("map_container").onclick=close_dialog
       
       // abrir diálogo
@@ -95,7 +100,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in vestibulum arcu
       
       
       // Una vez cargadas las imágenes el texto y el audio, mostrar todo.
-      $(dialog).show() 
+      $(transbox).show('slow')
+      $(dialog).show('slow') 
       
     }
   
