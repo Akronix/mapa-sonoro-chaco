@@ -53,9 +53,7 @@
     <!-- Dialog info starts here -->
     
     <div id="transbox" style="display:none; z-index:1">
-      <button style="text-align:center; float:right; color:#E5E5E5; cursor:pointer;
-      background: transparent none repeat scroll 0% 0%;
-      border: 0px none; margin:none; padding: 2%; font-size: 35px; opacity: 1.0; font-family:monospace;"
+      <button id="close_button"
       onclick="close_dialog()">x</button>
     </div>
     
@@ -63,7 +61,7 @@
       <div id="dialog_title"><h2>Título del lugar</h2></div>
       
       <div id="dialog_img">
-        <img width=55% height=55% src="material/01/01.png"></img>
+        <img width=65% height=65% src="material/01/01.png"></img>
       </div>
       <div id="dialog_text"><p align="left">Texto informativo para el lugar.<br/>
 
@@ -84,6 +82,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in vestibulum arcu
     function close_dialog() {
       $(transbox).hide('slow')
       $(dialog).hide('slow')
+      $(document).unbind('keyup.esc')
+  
       //document.location="./mapa-sonoro.html"
     }
 
@@ -103,6 +103,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in vestibulum arcu
       $(transbox).show('slow')
       $(dialog).show('slow') 
       
+      // Adding esc event
+      $(document).on('keyup.esc',function(e) {if (e.keyCode == 27) /* escape key */
+        close_dialog();
+      });
     }
   
   </script>
