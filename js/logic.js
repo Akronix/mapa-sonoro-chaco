@@ -1,8 +1,6 @@
 var rootDir = 'material'
 
 $(function() {
-  /*Load places to listen to*/
-  $("#include_places").load("places.html")
   
   //set up hash detection 
   $(window).bind( 'hashchange', function(e) {
