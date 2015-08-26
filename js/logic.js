@@ -1,6 +1,8 @@
 var rootDir = 'material'
 
 $(function() {
+  /*Load places to listen to*/
+  $("#include_places").load("places.html")
   
   //set up hash detection 
   $(window).bind( 'hashchange', function(e) {
@@ -11,27 +13,20 @@ $(function() {
     close_dialog();
   else if (hash != ''){
     var placeId = hash.substring(1,hash.length)
-    var dir = rootDir + '/' + placeId + '/';
-    var title = '<h2>Título del lugar</h2>'
-    document.getElementById("dialog_title").innerHTML = title
-    var text =  '<p align="left">Texto informativo para el lugar.<br/></p>'//dir+'texto.txt');
-    document.getElementById("dialog_text").innerHTML = text
-    $('#dialog_img_src').attr("src",dir+placeId+'.png');
-    $('#dialog_audio_src').attr("src",dir+placeId+'.mp3');
+    
+    var title = document.getElementById(placeId).getAttribute('data-title')
+    document.getElementById("dialog_title").innerHTML = '<h2>' + title + '</h2>'
+    
+    var text = document.getElementById(placeId).getAttribute('data-descp')
+    document.getElementById("dialog_text").innerHTML = '<p align="left">' + text + '</p>'
+    
+    var img_src = document.getElementById(placeId).getAttribute('data-img')
+    $('#dialog_img_src').attr("src",img_src);
+    var audio_src = document.getElementById(placeId).getAttribute('data-audio')
+    $('#dialog_audio_player').attr("src",audio_src);
     $("#dialog_audio_player").load();
     
-    
-    open_dialog();
-   /*hashwith = '#'+hash.substring(7, hashlenght);
-   hash = location.hash.substring(7, hashlenght);
-   if(hashwith != "#"+'index'){
-   show_overlay(hash);
-   document.title = 'Work '+hash;
-   }
-   else{
-   close_overlay();
-    
-   }*/
+    open_dialog(title);
   }
 });
  
@@ -49,10 +44,13 @@ function close_dialog() {
   $(document).unbind('keyup.esc')
   
   // going back to mapa-sonoro.html:
-  history.pushState("", document.title, window.location.pathname + window.location.search);
+  document.location.hash = ''
+  //history.pushState("", document.title, window.location.pathname + window.location.search);
+  
+  document.title = "Bitácora sonora"
 }
 
-function open_dialog() {
+function open_dialog(title) {
   // unfocus and desactivate any other component
   document.getElementById("map_container").onclick=close_dialog
   
@@ -69,6 +67,9 @@ function open_dialog() {
   // Una vez cargadas las imágenes el texto y el audio, mostrar todo.
   $(transbox).show('slow')
   $(dialog).show('slow') 
+  
+  // Update site title
+  document.title = "Bitácora Sonora" + ' - ' + title
   
   // Adding esc event
   $(document).on('keyup.esc',function(e) {if (e.keyCode == 27) /* escape key */
