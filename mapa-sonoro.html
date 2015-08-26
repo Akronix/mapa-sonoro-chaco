@@ -16,6 +16,7 @@
 </style>
   <link href="css/mapa.css" rel="stylesheet" media="all">
   <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+  <script type="application/javascript" src="js/logic.js"></script>
 </head>
 
 <body>    
@@ -41,14 +42,14 @@
     
     
     <!-- Places to listen to -->
-    <a class="place" id="01" href="#01" onclick="open_dialog()"> <img src="material/01/01.png" height=10px witdth=10px alt="Lugar 1" class="place hvr-grow" style="left: 100px; top: 100px" /> </a>
+    <a class="place_lnk" href="#01"> <img src="material/01/01.png" height=10px witdth=10px alt="Lugar 1" class="place hvr-grow" style="left: 100px; top: 100px" /> </a>
     
-    <a class="place" href="#"> <img src="material/01/01.png" alt="Lugar 1" class="place hvr-grow" style="left: 350px; top: 800px" /> </a>    
+    <a class="place_lnk" href="#1A"> <img src="material/01/01.png" alt="Lugar 1" class="place hvr-grow" style="left: 350px; top: 800px" /> </a>    
     
     
-    <a class="place" href="#"> <img src="material/01/01.png" alt="Lugar 1" class="place hvr-grow" style="left: 450px; top: 508px" /> </a>    
+    <a class="place_lnk" href="#03"> <img src="material/01/01.png" alt="Lugar 1" class="place hvr-grow" style="left: 450px; top: 508px" /> </a>    
 
-    <a class="place" href="#"> <img src="material/01/01.png" alt="Lugar 1" class="place hvr-grow" style="left: 360px; top: 400px" /> </a>
+    <a class="place_lnk" href="#04"> <img src="material/01/01.png" alt="Lugar 1" class="place hvr-grow" style="left: 360px; top: 400px" /> </a>
     
     <!-- Dialog info starts here -->
     
@@ -58,59 +59,20 @@
     </div>
     
     <div id="dialog" style="display:none; z-index:2; background-color:white;">
-      <div id="dialog_title"><h2>Título del lugar</h2></div>
+      <div id="dialog_title"></div>
       
       <div id="dialog_img">
-        <img width=65% height=65% src="material/01/01.png"></img>
+        <img id="dialog_img_src" width=65% height=65% src=""></img>
       </div>
-      <div id="dialog_text"><p align="left">Texto informativo para el lugar.<br/>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in vestibulum arcu. Integer dapibus euismod ipsum sit amet mollis. In id ornare ligula. Nullam molestie risus nulla, ac sodales tellus ultrices et. Duis suscipit sapien nec venenatis tincidunt. Sed ac laoreet lacus. Mauris at nulla metus. Nulla facilisi. Pellentesque vehicula facilisis est, eget posuere lorem consectetur sit amet. In arcu felis, convallis ut dolor rhoncus, aliquet lacinia nisi. Nullam malesuada feugiat varius. Nullam porta erat quis lectus suscipit, ut vulputate sapien imperdiet. Etiam egestas hendrerit libero in dictum. Mauris feugiat urna non mollis auctor. Ut cursus tempus sem, quis hendrerit magna semper eleifend. Curabitur eu pharetra metus, eget dictum arcu.
-
- </p>
-      </div>
+      <div id="dialog_text"></div>
+      
       <div id="dialog_audio" >
-        <audio controls >
-          <source src="material/01/01.MP3" type="audio/mpeg">
+        <audio controls id="dialog_audio_player">
+          <source id="dialog_audio_src" type="audio/mpeg" src="">
           Audio no soportado
         </audio>
       </div>
     </div>
-
-  <script type="application/javascript">
-    
-    function close_dialog() {
-      $(transbox).hide('slow')
-      $(dialog).hide('slow')
-      $(document).unbind('keyup.esc')
-  
-      //document.location="./mapa-sonoro.html"
-    }
-
-    function open_dialog() {
-      // unfocus and desactivate any other component
-      document.getElementById("map_container").onclick=close_dialog
-      
-      // abrir diálogo
-      
-      // poner imagen de cargando
-      
-      // load data and media
-      //dialog.css('position:');*/
-      
-      
-      // Una vez cargadas las imágenes el texto y el audio, mostrar todo.
-      $(transbox).show('slow')
-      $(dialog).show('slow') 
-      
-      // Adding esc event
-      $(document).on('keyup.esc',function(e) {if (e.keyCode == 27) /* escape key */
-        close_dialog();
-      });
-    }
-  
-  </script>
-
     
 </body>
 </html>
