@@ -4,6 +4,11 @@ img {
   position: absolute;
 }
 
+#map_container {
+  top:0;
+  left:0;    
+}
+
 .place {
   position: absolute;
   padding: 1em;
@@ -21,9 +26,9 @@ img {
   position: fixed;
   top:50%;
   left:50%;
-  width:50%; 
+  width:70%; 
   min-height:200px;
-  margin: -10% 0 0 -25%;
+  margin: -10% 0 0 -35%;
 }
 
 #dialog_title {
@@ -35,7 +40,7 @@ img {
 }
 
 #dialog_img {
-  width:35%;
+  width:40%;
   min-height:30%;
   float:left;
 }
@@ -51,7 +56,7 @@ img {
   margin-right:5%;
   display:table-cell;
   float:left;
-  width:60%;
+  width:55%;
   min-height:30%;
 }
 

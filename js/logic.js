@@ -46,7 +46,6 @@ function close_dialog() {
 function open_dialog(title) {
   // unfocus and desactivate any other component
   document.getElementById("map_container").onclick=close_dialog
-  
   // abrir diálogo
   
   // poner imagen de cargando
