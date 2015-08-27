@@ -39,7 +39,7 @@ function close_dialog() {
   // going back to mapa-sonoro.html:
   document.location.hash = ''
   //history.pushState("", document.title, window.location.pathname + window.location.search);
-  
+  document.getElementById("dialog_audio_player").pause();
   document.title = "Bitácora sonora"
 }
 
