@@ -1,5 +1,14 @@
 $(function() {
-  
+    
+  $('#dialog').click(function() {
+    var player = document.getElementById('dialog_audio_player')
+    if (player.paused == false)
+      player.pause();
+    else
+      player.play();
+  });
+    
+    
     //set up hash detection 
     $(window).bind( 'hashchange', function(e) {
     var hash = '';
