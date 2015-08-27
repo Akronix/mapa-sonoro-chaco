@@ -52,7 +52,7 @@ $(function() {
     {"cod": "24C", "name": "24C_CANTO_MUJER_AYOREO", "title": "Canto mujer Ayoreo", "lat":696,"long":795},
     {"cod": "25A", "name": "25A_DE_PEDO_EN_EL_BARRO", "title": "De pedo en el barro", "lat":164,"long":224},
     {"cod": "26A", "name": "26A_BARCO", "title": "Barco", "lat":397,"long":813},
-    {"cod": "27B", "name": "27B_CERDO_PUERTO_DIANA", "title": "Cerdo Puerto Diana", "lat":097,"long":531},
+    {"cod": "27B", "name": "27B_CERDO_PUERTO_DIANA", "title": "Cerdo Puerto Diana", "lat":97,"long":531},
     {"cod": "27C", "name": "27C_CANTOS_ISHIR", "title": "Cantos Ishir", "lat":392,"long":277},
     {"cod": "28A", "name": "28A_PÁJAROS_3_GIGANTES", "title": "Pájaros 3 gigantes", "lat":325,"long":459},
     {"cod": "29A", "name": "29A_MÚSICA_BRASILERA", "title": "Música brasilera", "lat":440,"long":569},
