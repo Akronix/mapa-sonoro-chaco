@@ -1,34 +1,32 @@
-var rootDir = 'material'
-
 $(function() {
   
-  //set up hash detection 
-  $(window).bind( 'hashchange', function(e) {
-  var hash = '';
-  hash = location.hash;
-  
-  if (hash == '' && $(dialog).is(":visible"))
-    close_dialog();
-  else if (hash != ''){
-    var placeId = hash.substring(1,hash.length)
+    //set up hash detection 
+    $(window).bind( 'hashchange', function(e) {
+    var hash = '';
+    hash = location.hash;
     
-    var title = document.getElementById(placeId).getAttribute('data-title')
-    document.getElementById("dialog_title").innerHTML = '<h2>' + title + '</h2>'
-    
-    var text = document.getElementById(placeId).getAttribute('data-descp')
-    document.getElementById("dialog_text").innerHTML = '<p align="left">' + text + '</p>'
-    
-    var img_src = document.getElementById(placeId).getAttribute('data-img')
-    $('#dialog_img_src').attr("src",img_src);
-    var audio_src = document.getElementById(placeId).getAttribute('data-audio')
-    $('#dialog_audio_player').attr("src",audio_src);
-    $("#dialog_audio_player").load();
-    
-    open_dialog(title);
-  }
-});
+    if (hash == '' && $(dialog).is(":visible"))
+      close_dialog();
+    else if (hash != ''){
+      var placeId = hash.substring(1,hash.length)
+      
+      var title = document.getElementById(placeId).getAttribute('data-title')
+      document.getElementById("dialog_title").innerHTML = '<h2>' + title + '</h2>'
+      
+      var text = document.getElementById(placeId).getAttribute('data-descp')
+      document.getElementById("dialog_text").innerHTML = '<p align="left">' + text + '</p>'
+      
+      var img_src = document.getElementById(placeId).getAttribute('data-img')
+      $('#dialog_img_src').attr("src",img_src);
+      var audio_src = document.getElementById(placeId).getAttribute('data-audio')
+      $('#dialog_audio_player').attr("src",audio_src);
+      $("#dialog_audio_player").load();
+      
+      open_dialog(title);
+    }
+  });
  
- $(window).trigger( 'hashchange' );
+   $(window).trigger( 'hashchange' );
   
   /*$(".places_lnk").each(
     function(){
