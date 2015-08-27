@@ -28,9 +28,6 @@ $(function() {
  
    $(window).trigger( 'hashchange' );
   
-  /*$(".places_lnk").each(
-    function(){
-      $(this).click( open_dialog )});*/
 });
 
 
