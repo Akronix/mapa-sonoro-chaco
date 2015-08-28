@@ -66,7 +66,9 @@ $(function() {
   ]
   
   
-  var template = "<a class='place_lnk' href='#{{cod}}' id='{{cod}}' data-title='{{title}}' data-descp='material/descripciones/{{name}}.txt' data-img='material/imagenes/{{name}}.png' data-audio='material/MP3/{{name}}.mp3'><img src='material/imagenes/{{name}}.png' alt='{{title}}' class='place hvr-grow' style='left: {{lat}}px; top: {{long}}px' /></a>"
+  var template = "<a class='place_lnk' href='#{{cod}}' id='{{cod}}' data-title='{{title}}' data-descp='material/descripciones/{{name}}.txt' data-img='material/imagenes/{{name}}.gif' data-audio='material/MP3/{{name}}.mp3'><img src='material/imagenes/{{name}}.png' alt='{{title}}' class='place hvr-grow' style='left: {{lat}}px; top: {{long}}px' /></a>"
+
+  Mustache.parse(template); // speeds up future uses
 
   places.forEach(
     function(element,index,array){

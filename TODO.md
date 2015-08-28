@@ -1,6 +1,6 @@
-1. Read plain text files with description
+1. Read plain text files with description (maybe using mustache?)
 4. Fix issue on browsing that mapa-sonoro.html is twice on the browsing history / avoid leaving a hash at the end fo the URL
 5. appearing places effect when page is loaded
 6. close_dialog also pressing in background
 7. Add real map and locations
-8. convert png to gif
+9. Add loading on dialog if needed
