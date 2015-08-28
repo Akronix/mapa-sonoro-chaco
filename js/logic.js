@@ -1,6 +1,6 @@
 $(function() {
     
-  $('#dialog').click(function() {
+  $('#dialog_img').click(function() {
     var player = document.getElementById('dialog_audio_player')
     if (player.paused == false)
       player.pause();
