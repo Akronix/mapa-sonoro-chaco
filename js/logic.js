@@ -23,12 +23,11 @@ $(function() {
       document.getElementById("dialog_title").innerHTML = '<h2>' + title + '</h2>'
       
       var text_src = document.getElementById(placeId).getAttribute('data-descp')
-      console.log(text_src);
-      jQuery.get(text_src, function(data) {
-        alert("success");
-        //alert(data);
-        /*document.getElementById("dialog_text").innerHTML = '<p align="left">' + text + '</p>';*/
+      /*
+       * jQuery.get(text_src, function(data) {
+        document.getElementById("dialog_text").innerHTML = '<p align="left">' + data + '</p>';
       });
+      */
       
       var img_src = document.getElementById(placeId).getAttribute('data-img')
       $('#dialog_img_src').attr("src",img_src);
