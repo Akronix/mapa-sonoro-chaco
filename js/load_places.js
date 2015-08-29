@@ -75,8 +75,10 @@ $(function() {
       document.getElementById('include_places').innerHTML += output;
       document.getElementById(element["cod"]).onload = function(){
         //$(element["cod"]+'_lnk').show();
-        $('#'+element["cod"]+'_span').fadeIn('slow');//.animate({opacity:1});
-        document.getElementById('pop').play();
+        $('#'+element["cod"]+'_span').fadeIn('slow', function() {
+          document.getElementById('pop').play();
+        });//.animate({opacity:1});
+        
         //console.log(document.getElementById(element["cod"]+'_lnk'));
         //console.log('Image ' + element["cod"] + ' loaded')
       };
