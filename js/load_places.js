@@ -65,17 +65,21 @@ $(function() {
 
   ]
   
-  
-  var template = "<a class='place_lnk' href='#{{cod}}' id='{{cod}}' data-title='{{title}}' data-descp='material/descripciones/{{name}}.txt' data-img='material/imagenes/{{name}}.gif' data-audio='material/MP3/{{name}}.mp3'><img src='material/imagenes/{{name}}.gif' alt='{{title}}' class='place hvr-grow' style='left: {{lat}}px; top: {{long}}px' /></a>"
+  var template = "<span id='{{cod}}_span' style='display:none' ><a id='{{cod}}_lnk' class='place_lnk' href='#{{cod}}' data-title='{{title}}' data-descp='material/descripciones/{{name}}.txt' data-img='material/imagenes/{{name}}.gif' data-audio='material/MP3/{{name}}.mp3'><img id='{{cod}}' src='material/imagenes/{{name}}.gif' alt='{{title}}' class='place hvr-grow' style='left: {{lat}}px; top: {{long}}px' /></a></span>"
 
   Mustache.parse(template); // speeds up future uses
 
   places.forEach(
     function(element,index,array){
       var output = Mustache.render(template,element);
-      //console.log(output);
       document.getElementById('include_places').innerHTML += output;
+      document.getElementById(element["cod"]).onload = function(){
+        //$(element["cod"]+'_lnk').show();
+        $('#'+element["cod"]+'_span').fadeIn('slow');//.animate({opacity:1});
+        document.getElementById('pop').play();
+        //console.log(document.getElementById(element["cod"]+'_lnk'));
+        //console.log('Image ' + element["cod"] + ' loaded')
+      };
     }
   );
-
 }());
