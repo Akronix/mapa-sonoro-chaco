@@ -1,3 +1,10 @@
+function popImage(place) {
+  $(place).fadeIn('slow', function() {
+    document.getElementById('pop').play();
+  });
+}
+
+
 $(function() {
  /*
   <a class="place_lnk" href="#%cod%" id="%cod%" data-title="%titulo%" data-descp="material/descripciones/%nombre%.txt" data-img="material/imagenes/%nombre%.png" data-audio="material/MP3/%nombre%.mp3">
@@ -75,10 +82,11 @@ $(function() {
       document.getElementById('include_places').innerHTML += output;
       document.getElementById(element["cod"]).onload = function(){
         //$(element["cod"]+'_lnk').show();
-        $('#'+element["cod"]+'_span').fadeIn('slow', function() {
-          document.getElementById('pop').play();
-        });//.animate({opacity:1});
-        
+        placesCont = $('#include_places');
+        placesCont.queue("popQueue",popImage('#'+element["cod"]+'_span'));
+        setTimeout(function() {
+          placesCont.dequeue("popQueue");
+        }, 1000);
         //console.log(document.getElementById(element["cod"]+'_lnk'));
         //console.log('Image ' + element["cod"] + ' loaded')
       };
