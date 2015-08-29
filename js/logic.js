@@ -17,7 +17,7 @@ $(function() {
     if (hash == '' && $(dialog).is(":visible"))
       close_dialog();
     else if (hash != ''){
-      var placeId = hash.substring(1,hash.length)
+      var placeId = hash.substring(1,hash.length) + '_lnk'
       
       var title = document.getElementById(placeId).getAttribute('data-title')
       document.getElementById("dialog_title").innerHTML = '<h2>' + title + '</h2>'
