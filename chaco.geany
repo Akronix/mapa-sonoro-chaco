@@ -27,12 +27,12 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
+current_page=5
 FILE_NAME_0=1359;HTML;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmapa-sonoro.html;0;2
 FILE_NAME_1=503;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Flogic.js;0;2
 FILE_NAME_2=560;CSS;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fcss%2Fmapa.css;0;2
 FILE_NAME_3=125;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FTODO.md;0;2
-FILE_NAME_4=6930;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Fload_places.js;0;2
+FILE_NAME_4=6949;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Fload_places.js;0;2
 FILE_NAME_5=365;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FREADME.md;0;2
 
 [VTE]

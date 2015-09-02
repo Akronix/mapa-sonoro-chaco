@@ -70,7 +70,7 @@ function open_dialog(title) {
   //document.title += ;
   
   // Una vez cargadas las imágenes el texto y el audio, mostrar todo.
-  $(transbox).show('slow')
+  //$(transbox).show('slow')
   $(dialog).show('slow') 
   
   // Update site title

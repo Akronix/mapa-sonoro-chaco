@@ -3,3 +3,7 @@
 7. Add real map and locations
 9. Add loading on dialog if needed
 10. clean repo
+11. see if we can have zoom
+12. Add helping text after 2 secs of hovering
+13. mano que arrastre mapa
+14. div container for closing dialog to appear when dialog pops

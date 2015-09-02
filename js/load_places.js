@@ -1,6 +1,6 @@
 function popImage(place) {
   $(place).fadeIn('slow', function() {
-    document.getElementById('pop').play();
+    ;/*document.getElementById('pop').play();*/
   });
 }
 
@@ -43,7 +43,7 @@ $(function() {
     {"cod": "14A", "name": "14A_PIEDRAS_RIO", "title": "Piedras río", "lat":505,"long":326},
     {"cod": "15B", "name": "15B_PUENTE_(GUERRA_CHACO)", "title":"Puente (guerra chaco)", "lat":632,"long":142},
     {"cod": "16A", "name": "16A_AMANECER_CAMIRI", "title": "Amanecer camiri", "lat":732,"long":131},
-    {"cod": "16C", "name": "16C_ARETE_GUASÚ", "title": "Arete Guasú    ", "lat":337,"long":869},
+    {"cod": "16C", "name": "16C_ARETE_GUASÚ", "title": "Arete Guasú", "lat":337,"long":869},
     {"cod": "17A", "name": "17A_FÚTBOL_UNIBOL", "title": "Fútbol unibol", "lat":147,"long":811},
     {"cod": "17B", "name": "17B_SERMÓN", "title": "Sermón", "lat":758,"long":716},
     {"cod": "17C", "name": "17C_PAJARITOS_DONDE_HUBO_LUCHA", "title": "Pajaritos donde hubo lucha", "lat":639,"long":660},

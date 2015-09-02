@@ -11,6 +11,8 @@
     html, body { margin: 0; padding: 0; }
   </style>
   <link href="css/mapa.css" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/lib/mustache.min.js"></script>
 </head>
@@ -22,21 +24,21 @@
   </div>
     
   <!-- Dialog info starts here -->    
-    <div id="transbox" style="display:none; z-index:3">
-      <button id="close_button"
-      onclick="close_dialog()">x</button>
-    </div>
+  <div id="transbox" style="display:none; z-index:3">
+    <button id="close_button"
+    onclick="close_dialog()">x</button>
+  </div>
     
     <div id="dialog" style="display:none; z-index:4; background-color:white;" >
       <div id="dialog_title"></div>
       
       <div id="dialog_img">
-        <img id="dialog_img_src" width=65% height=65% ></img>
+        <img id="dialog_img_src" width=75% height=75% ></img>
       </div>
       <div id="dialog_text"></div>
       
       <div id="dialog_audio" >
-        <audio controls autoplay id="dialog_audio_player">
+        <audio controls id="dialog_audio_player">
           <!--<source id="dialog_audio_src" type="audio/mpeg">-->
           Audio no soportado
         </audio>
