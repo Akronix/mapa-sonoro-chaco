@@ -27,13 +27,14 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=5
-FILE_NAME_0=1359;HTML;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmapa-sonoro.html;0;2
-FILE_NAME_1=503;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Flogic.js;0;2
-FILE_NAME_2=560;CSS;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fcss%2Fmapa.css;0;2
-FILE_NAME_3=125;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FTODO.md;0;2
-FILE_NAME_4=6949;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Fload_places.js;0;2
-FILE_NAME_5=365;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FREADME.md;0;2
+current_page=6
+FILE_NAME_0=946;HTML;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmapa-sonoro.html;0;2
+FILE_NAME_1=293;CSS;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fcss%2Fmapa.css;0;2
+FILE_NAME_2=815;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Flogic.js;0;2
+FILE_NAME_3=593;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Fload_places.js;0;2
+FILE_NAME_4=387;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FTODO.md;0;2
+FILE_NAME_5=374;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FREADME.md;0;2
+FILE_NAME_6=295;Python;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmaterial%2Fgenerate_places_info.py;0;4
 
 [VTE]
 last_dir=/home/akronix/workspace/TFG/pmctrack/src/lib/libpmctrack/src
