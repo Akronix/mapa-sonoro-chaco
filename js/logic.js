@@ -45,7 +45,7 @@ $(function() {
 
 
 function close_dialog() {
-  $(transbox).hide('slow')
+  //$(transbox).hide('slow')
   $(dialog).hide('slow')
   $(document).unbind('keyup.esc')
   

@@ -32,20 +32,21 @@ img {
   display:table;
 }
 
-#dialog_title {
-  border-radius: 15px 15px 0 0;
-  text-align: left;
-  vertical-align: middle;
-/*
-  border-bottom: medium solid gray;
-*/
-  margin-top: 2%;
-  width:55%;
+#dialog_header {
+  width:100%;
   height:15%;
-  float:right;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#dialog_title {
+  width:55%;
+  padding-top: 2%;
+  margin-left:30%;
+  float:left;
   display:table-cell;
 }
-  
+
 #dialog_title h2{
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
@@ -53,6 +54,24 @@ img {
   color: #292929;
 }
 
+#close_button {
+  text-align:center; float:right; color:gray; cursor:pointer;
+  background: transparent none repeat scroll 0% 0%;
+  border: 0px none;
+  margin:none; margin-left:10px;
+  padding-right: 30px;
+  padding-top: 1.2%;
+  font-size: 35px; font-weight: 400; font-family: monospace;
+  transition: all .3s ease;
+}
+
+/*
+#close_button:hover, #close_button:focus, #close_button:active {
+  font-size: 50px;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}*/
+  
 #dialog_img {
   width:40%;
   min-height:40%;
@@ -108,24 +127,6 @@ img {
   min-height: 250px;
   background-color: black;
   border-radius: 5px;
-}
-
-#close_button {
-  text-align:center; float:right; color:#E5E5E5; cursor:pointer;
-  background: transparent none repeat scroll 0% 0%;
-  border: 0px none; margin:none; 
-  padding-right: 3%;
-  padding-top: 2%;
-  font-size: 35px; font-weight: 400;
-  font-family: monospace;
-  transition: all .3s ease;
-}
-
-#close_button:hover, #close_button:focus, #close_button:active {
-  color:white;
-  font-size: 50px;
-  opacity: 1.0;
-  filter: alpha(opacity=100);
 }
 
 .hvr-grow {
