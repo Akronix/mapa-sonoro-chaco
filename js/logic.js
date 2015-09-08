@@ -45,7 +45,7 @@ $(function() {
 
 
 function close_dialog() {
-  //$(transbox).hide('slow')
+  $(background_container).hide()
   $(dialog).hide('slow')
   $(document).unbind('keyup.esc')
   
@@ -58,7 +58,7 @@ function close_dialog() {
 
 function open_dialog(title) {
   // unfocus and desactivate any other component
-  document.getElementById("map_container").onclick=close_dialog
+  document.getElementById("background_container").onclick=close_dialog
   // abrir diálogo
   
   // poner imagen de cargando
@@ -66,11 +66,8 @@ function open_dialog(title) {
   // load data and media
   //dialog.css('position:');*/
   
-  // Change web title
-  //document.title += ;
-  
   // Una vez cargadas las imágenes el texto y el audio, mostrar todo.
-  //$(transbox).show('slow')
+  $(background_container).show()
   $(dialog).show('slow') 
   
   // Update site title

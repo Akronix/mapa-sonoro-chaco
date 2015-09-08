@@ -6,4 +6,8 @@
 11. see if we can have zoom
 12. Add helping text after 2 secs of hovering
 13. mano que arrastre mapa
-14. div container for closing dialog to appear when dialog pops
+14. <strike> div container (taking 100% screen) for closing dialog to appear when dialog pops</strike>
+15. check audio container and close button with small screens
+16. Volver a poner autoplay
+17. Start with the map and after make it dissapear / put zoom on the top left and show places
+18. Add my signature to the website
