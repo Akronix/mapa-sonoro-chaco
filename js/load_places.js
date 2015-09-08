@@ -70,7 +70,7 @@ $(function() {
       document.getElementById('include_places').innerHTML += output;
       document.getElementById(element["cod"]).onload = function(){
         $('#'+element["cod"]+'_span').fadeIn('slow');
-        document.getElementById('pop').play()
+        //document.getElementById('pop').play()
         }
       
       /* onload = function(){
