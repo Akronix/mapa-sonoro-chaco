@@ -1,12 +1,9 @@
 $(function() {
-  
-  $('#dialog_img').click(function() {
-    var player = document.getElementById('dialog_audio_player')
-    if (player.paused == false)
-      player.pause();
-    else
-      player.play();
-  });
+    
+    /* At start up, center screen on stating point of the map */
+    var wOffSet = $("#scrollable_container").width() / 2, hOffSet = $("#scrollable_container").height() / 2;
+    document.getElementById("scrollable_container").scrollTop = 1400 - hOffSet;
+    document.getElementById("scrollable_container").scrollLeft= 640 + wOffSet;
     
     
     //set up hash detection 
@@ -37,6 +34,15 @@ $(function() {
       
       open_dialog(title);
     }
+    
+    $('#dialog_img').click(function() {
+      var player = document.getElementById('dialog_audio_player')
+      if (player.paused == false)
+        player.pause();
+      else
+        player.play();
+    });
+    
   });
  
    $(window).trigger( 'hashchange' );
