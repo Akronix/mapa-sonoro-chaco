@@ -26,3 +26,8 @@ Table of supported version of browsers, sort by preferability:
     <tr><td>Safari</td> <td><i>Not tested/supported</i></td></tr>
   </tbody>
 </table>
+
+# Dependencies
+It uses the following libraries: [jQuery](http://jquery.com/), [mustache.js](https://github.com/janl/mustache.js) and [dragscroll](https://github.com/asvd/dragscroll).
+
+Thank you so much to all the people who has contributed in some way to these libraries, you've saved me a lot of time.

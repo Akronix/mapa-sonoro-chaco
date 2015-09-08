@@ -1,16 +1,4 @@
-function popImage(place) {
-  $(place).fadeIn('slow', function() {
-    ;/*document.getElementById('pop').play();*/
-  });
-}
-
-
 $(function() {
- /*
-  <a class="place_lnk" href="#%cod%" id="%cod%" data-title="%titulo%" data-descp="material/descripciones/%nombre%.txt" data-img="material/imagenes/%nombre%.png" data-audio="material/MP3/%nombre%.mp3">
-    <img src="material/imagenes/%nombre%.png" alt="%titulo%" class="place hvr-grow" style="left: px; top: px" />
-  </a>
-  */
   
   var places = [
     {"cod": "01", "title":"Palmeras", "name":"01", "lat":100,"long":100},
@@ -72,7 +60,7 @@ $(function() {
 
   ]
   
-  var template = "<span id='{{cod}}_span' style='display:none' ><a id='{{cod}}_lnk' class='place_lnk' href='#{{cod}}' data-title='{{title}}' data-descp='material/descripciones/{{name}}.txt' data-img='material/imagenes/{{name}}.gif' data-audio='material/MP3/{{name}}.mp3'><img id='{{cod}}' src='material/imagenes/{{name}}.gif' alt='{{title}}' class='place hvr-grow' style='left: {{lat}}px; top: {{long}}px' /></a></span>"
+  var template = "<span id='{{cod}}_span' style='display:none' ><a id='{{cod}}_lnk' class='place_lnk' href='#{{cod}}' data-title='{{title}}' data-descp='material/descripciones/{{name}}.txt' data-img='material/imagenes/{{name}}.gif' data-audio='material/MP3/{{name}}.mp3'><img id='{{cod}}' src='material/imagenes/{{name}}.gif' alt='{{title}}' class='place' style='left: {{lat}}px; top: {{long}}px' /></a></span>"
 
   Mustache.parse(template); // speeds up future uses
 
@@ -81,6 +69,11 @@ $(function() {
       var output = Mustache.render(template,element);
       document.getElementById('include_places').innerHTML += output;
       document.getElementById(element["cod"]).onload = function(){
+        $('#'+element["cod"]+'_span').fadeIn('slow');
+        document.getElementById('pop').play()
+        }
+      
+      /* onload = function(){
         //$(element["cod"]+'_lnk').show();
         placesCont = $('#include_places');
         placesCont.queue("popQueue",popImage('#'+element["cod"]+'_span'));
@@ -89,7 +82,7 @@ $(function() {
         }, 1000);
         //console.log(document.getElementById(element["cod"]+'_lnk'));
         //console.log('Image ' + element["cod"] + ' loaded')
-      };
+      };*/
     }
   );
 }());
