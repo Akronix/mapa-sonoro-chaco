@@ -1,5 +1,5 @@
 $(function() {
-    
+  
   $('#dialog_img').click(function() {
     var player = document.getElementById('dialog_audio_player')
     if (player.paused == false)
@@ -54,6 +54,9 @@ function close_dialog() {
   //history.pushState("", document.title, window.location.pathname + window.location.search);
   document.getElementById("dialog_audio_player").pause();
   document.title = "Bitácora sonora"
+  
+  $(scrollable_container).addClass("dragscroll")
+  dragscroll.reset();
 }
 
 function open_dialog(title) {
@@ -63,8 +66,7 @@ function open_dialog(title) {
   
   // poner imagen de cargando
   
-  // load data and media
-  //dialog.css('position:');*/
+  $(scrollable_container).removeClass("dragscroll")
   
   // Una vez cargadas las imágenes el texto y el audio, mostrar todo.
   $(background_container).show()

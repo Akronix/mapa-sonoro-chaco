@@ -15,19 +15,18 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/lib/mustache.min.js"></script>
+  <script type="text/javascript" src="js/lib/dragscroll/dragscroll.js"></script>
 </head>
 
-<body>    
+<body>
+<div id="scrollable_container" class="dragscroll" style="position:fixed;width:100vw;height:100vh;" >
   
   <div id="map_container">
     <img src="mapa.jpg" height="1115px" width="810px"/>
   </div>
     
   <!-- Dialog info starts here -->    
-  <!--<div id="transbox" style="display:none; z-index:3">
-  </div>
-  -->
-  <div id=background_container style="position:fixed;width:100vw;height:100vh;display:none; z-index:3">
+  <div id=background_container style="position:fixed;width:100vw;height:100vh; z-index:3; display:none">
   </div>
   
   <div id="dialog" style="display:none; z-index:4; background-color:white;" >
@@ -50,7 +49,9 @@
   </div>
   
   <div id="include_places"></div>
-  
+
+</div>
+
   <audio style="display:none" id='pop'>
     <source src="Blop-Mark_DiAngelo.mp3" type="audio/mpeg" />
     <source src="Blop-Mark_DiAngelo.ogg" type="audio/ogg" />
@@ -59,5 +60,4 @@
 </body>
 <script type="application/javascript" src="js/logic.js"></script>
 <script type="application/javascript" src="js/load_places.js"></script>
-
 </html>
