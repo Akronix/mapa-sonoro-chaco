@@ -120,6 +120,7 @@ img {
 #dialog_audio audio {
   position:relative;
   left:0%;
+  cursor: pointer;
 }
 
 #transbox {
