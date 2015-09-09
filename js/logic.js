@@ -1,5 +1,12 @@
 $(function() {
   
+  /* Doesn't work I don't know why :'( */ 
+   /* At start up, center screen on stating point of the map */
+    //var wOffSet = $("#scrollable_container").width() / 2, hOffSet = $("#scrollable_container").height() / 2;
+    //document.getElementById("scrollable_container").scrollTop = 1400 - hOffSet;
+    //document.getElementById("scrollable_container").scrollLeft= 640 + wOffSet;
+  
+  
   $('#dialog_img').click(function() {
     var player = document.getElementById('dialog_audio_player')
     if (player.paused == false)
