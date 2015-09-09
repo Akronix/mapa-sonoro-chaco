@@ -1,5 +1,5 @@
 $(function() {
-  
+ 
   /* Doesn't work I don't know why :'( */ 
    /* At start up, center screen on stating point of the map */
     //var wOffSet = $("#scrollable_container").width() / 2, hOffSet = $("#scrollable_container").height() / 2;
@@ -14,7 +14,6 @@ $(function() {
     else
       player.play();
   });
-    
     
     //set up hash detection 
     $(window).bind( 'hashchange', function(e) {
@@ -44,6 +43,15 @@ $(function() {
       
       open_dialog(title);
     }
+    
+    $('#dialog_img').click(function() {
+      var player = document.getElementById('dialog_audio_player')
+      if (player.paused == false)
+        player.pause();
+      else
+        player.play();
+    });
+    
   });
  
    $(window).trigger( 'hashchange' );
