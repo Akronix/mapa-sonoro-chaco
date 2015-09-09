@@ -44,14 +44,6 @@ $(function() {
       open_dialog(title);
     }
     
-    $('#dialog_img').click(function() {
-      var player = document.getElementById('dialog_audio_player')
-      if (player.paused == false)
-        player.pause();
-      else
-        player.play();
-    });
-    
   });
  
    $(window).trigger( 'hashchange' );
@@ -95,4 +87,3 @@ function open_dialog(title) {
     close_dialog();
   });
 }
-
