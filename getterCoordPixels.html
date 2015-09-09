@@ -1,0 +1,48 @@
+<!--
+   getterCoordPixels.html
+   
+   Descp: 
+   
+   Created on: 08-sep-2015
+   
+   Copyright 2015 Abel Serrano Juste <abeserra@ucm.es>
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>img coord pixels web tool</title>
+<script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; }
+#map_container {
+  top:0;
+  left:0;    
+}
+</style>
+</head>
+
+<body onload="getCoords()">
+ <div id="map_container" height="2325px" width="1490px">
+  <img src="mapa_puntos.jpg" height="2325px" width="1490px"/>
+ </div>
+
+coordinates :
+<div id="coordinates">0</div>​
+
+</body>
+<script>
+function getCoords() { 
+    $('#map_container').mousemove(function(e){
+        //~ $('#coordinates').html('left: ' + e.pageX + ' top : ' + e.pageY);
+        console.log('left: ' + e.pageX + ' top : ' + e.pageY);
+    });
+    $('#map_container').click(function(e){
+        alert('left: ' + e.pageX + ' top : ' + e.pageY);
+    });
+}
+</script>
+</html>
