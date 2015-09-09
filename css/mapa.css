@@ -37,6 +37,7 @@ img {
   min-height:200px;
   margin: -13% 0 0 -35%;
   display:table;
+  cursor: auto;
 }
 
 #dialog_header {

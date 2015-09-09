@@ -7,4 +7,3 @@
 16. Volver a poner autoplay
 17. Start with the map and after make it dissapear / put zoom on the top left and show places
 19. open issue in https://github.com/asvd/dragscroll for body without viewport in firefox?
-20. dialog should appear in the center of the *current* screen being shown, not the absolute screen (top right) as now
