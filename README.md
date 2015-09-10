@@ -1,15 +1,7 @@
 # mapa-sonoro-chaco
 Sitio web para un mapa sonoro de la zona del Chaco Ra'anga en latinoamérica 
 
-# Copyright of the multimedia content
-
-## Blob
-The 'Blob' sound has been done by Mark DiAngelo and it has a Creative Commons 3.0 Attribution License. I've got it from [http://soundbible.com/2067-Blop.html](http://soundbible.com/2067-Blop.html). Thank you very much.
-
-## Other
-All the *other* multimedia hosted in this repo and/or in this site have all the rights reserved. Copy, modification or reproduction is prohibited.
-
-# Browser support
+## Browser support
 *This website is only tested on desktop browsers, mobile browsers are not guaranteed to behaviour correctly*
 
 It requires at least a browser supporting HTML5.
@@ -21,13 +13,18 @@ Table of supported version of browsers, sort by preferability:
     <tr><td>Firefox</td> <td>38</td></tr>
     <tr><td>Chrome</td> <td>31</td></tr>
     <tr><td>Opera</td> <td>31</td></tr>
-    <tr><td>IE</td> <td>8 (<i>Theorically</i>)</td></tr>
+    <tr><td>IE</td> <td>Not supported</td></tr>
     <tr><td>Edge</td> <td><i>Not tested/supported</i></td></tr>
     <tr><td>Safari</td> <td><i>Not tested/supported</i></td></tr>
   </tbody>
 </table>
 
-# Dependencies
+## Dependencies
 It uses the following libraries: [jQuery](http://jquery.com/), [mustache.js](https://github.com/janl/mustache.js) and [dragscroll](https://github.com/asvd/dragscroll).
 
 Thank you so much to all the people who has contributed in some way to these libraries, you've saved me a lot of time.
+
+## Code License
+HTML, CSS and JS code (other than the libraries located in js/lib) are licensed under the MIT license.
+
+Attribution/mention if you use something of this code is welcomed :) 
