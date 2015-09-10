@@ -27,14 +27,17 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=6
-FILE_NAME_0=349;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FTODO.md;0;2
-FILE_NAME_1=1182;HTML;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmapa-sonoro.html;0;2
-FILE_NAME_2=1013;CSS;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fcss%2Fmapa.css;0;2
-FILE_NAME_3=1364;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Flogic.js;0;2
-FILE_NAME_4=593;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Fload_places.js;0;2
-FILE_NAME_5=374;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FREADME.md;0;2
-FILE_NAME_6=295;Python;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmaterial%2Fgenerate_places_info.py;0;4
+current_page=0
+FILE_NAME_0=586;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FTODO.md;0;2
+FILE_NAME_1=1964;HTML;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmapa-sonoro.html;0;2
+FILE_NAME_2=917;CSS;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fcss%2Fmapa.css;0;2
+FILE_NAME_3=2096;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Flogic.js;0;2
+FILE_NAME_4=374;Markdown;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2FREADME.md;0;2
+FILE_NAME_5=378;Python;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmaterial%2Fset_titles_by_code.py;0;4
+FILE_NAME_6=4590;Javascript;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fjs%2Fload_places.js;0;2
+FILE_NAME_7=122;Python;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmaterial%2Fgenerate_places_info.py;0;4
+FILE_NAME_8=0;None;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2Fmaterial%2FTÍTULOS.txt;0;2
+FILE_NAME_9=17;None;0;EUTF-8;0;1;1;%2Fhome%2Fakronix%2Fworkspace%2Fchaco-ra%27anga%2F.gitignore;0;2
 
 [VTE]
-last_dir=/home/akronix/workspace/haskell/PD/libro
+last_dir=/home/akronix/workspace/chaco-ra'anga

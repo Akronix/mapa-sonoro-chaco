@@ -1,5 +1,5 @@
 $(function() {
-  var x = 5, y = 5; /* off set for moving images to the middle of the coords set */
+  var x = 8, y = 8; /* off set for moving images to the middle of the coords set */
   
   var places = [
     {"cod": "1A", "title":"Relato de torturas durante la dictadura (1976-1983) en La Casa por la Memoria", "name":"1A_TORTURAS", "left":1075-x,"top":1405-y},
@@ -23,10 +23,10 @@ $(function() {
     {"cod": "8B", "name":"8B_PERROS", "title":"Perros", "left":846-x,"top":1133-y},
     {"cod": "9A", "name": "9A_INGENIERO_JUÁREZ", "title": "Tensión social en Ingeniero Juárez", "left":753-x,"top":946-y},
     {"cod": "10A", "name":"10A_TARTAGAL", "title":"Radio “La Voz Indígena” en Tartagal", "left":525-x,"top":772-y},
-    {"cod": "11A", "name":"11A_FRONTERA", "title":"Frontera Argentina-Bolivia, Yacuiba", "left":554-x,"top":708-y},
-    {"cod": "11B", "name": "11B_ACTO_RECEPCIÓN_YACUIBA", "title": "Acto de recepción en Yacuiba", "left":590-x,"top":692-y},
-    {"cod": "12A", "name":"12A_CREPITAR_OLLA", "title":"Crepitar de brasas bajo la olla", "left":580-x,"top":708-y},
-    {"cod": "12B", "name": "12B_CHACARERA_CON_VACAS", "title": "Chacarera con vacas", "left":614-x,"top":692-y},
+    {"cod": "11A", "name":"11A_FRONTERA", "title":"Frontera Argentina-Bolivia, Yacuiba", "left":551-x,"top":712-y},
+    {"cod": "11B", "name": "11B_ACTO_RECEPCIÓN_YACUIBA", "title": "Acto de recepción en Yacuiba", "left":593-x,"top":689-y},
+    {"cod": "12A", "name":"12A_CREPITAR_OLLA", "title":"Crepitar de brasas bajo la olla", "left":577-x,"top":712-y},
+    {"cod": "12B", "name": "12B_CHACARERA_CON_VACAS", "title": "Chacarera con vacas", "left":617-x,"top":689-y},
     {"cod": "12C", "name": "12C_MENONITAS", "title": "Menonitas de El Breal-Colonia Sur", "left":569-x,"top":679-y},
     {"cod": "13A", "name": "13A_MILITARES_ESCONBOL", "title": "ESCONBOL en Sanandita", "left":536-x,"top":664-y},
     {"cod": "13B", "name": "13B_PLANTAS_REPSOL", "title": "Planta de Gas en Campo Margarita", "left":542-x,"top":638-y},
@@ -63,7 +63,7 @@ $(function() {
     {"cod": "29C", "name": "29C_AMBIENTE_CASADO", "title": "Ambiente en Puerto Casado", "left":1248-x,"top":755-y},
     {"cod": "31A", "name": "31A_CHARLA_SAWHOYAMAXA", "title": "Charla en Sawhoyamaxa", "left":1216-x,"top":902-y},
     {"cod": "31B", "name": "31B_NIÑOS_SAWHOYAMAXA", "title": "Niños en Sawhoyamaxa", "left":1242-x,"top":902-y},
-    {"cod": "J3", "name": "J3_NDE_RAMIREZ", "title": "Nde Ramirez en el Juan de Salazar", "left":1248-x,"top":1153-y},
+    {"cod": "J3", "name": "J3_NDE_RAMIREZ", "title": "Nde Ramirez en el Juan de Salazar", "left":1240-x,"top":1153-y},
     {"cod": "J4", "name": "J4_ASUNCIÓN_DESDE_GRAN_HOTEL_PARANÁ", "title": "Asunción desde la azotea del Gran Hotel Paraná", "left":1266-x,"top":1153-y}
 
   ]

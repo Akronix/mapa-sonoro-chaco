@@ -7,3 +7,4 @@
 16. Volver a poner autoplay
 17. Start with the map and after make it dissapear / put zoom on the top left and show places
 19. open issue in https://github.com/asvd/dragscroll for body without viewport in firefox?
+21. Detectar y evitar usuarios sin HTML 5 o desde disp. móvil
