@@ -20,13 +20,13 @@ img {
 
 .place:hover, .place:focus {
   z-index: 2;
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   box-shadow: none;
 }
 
 #dialog {
-  border: medium solid gray;
+  border: medium solid black;
   border-radius: 15px;
   /* Centering on the screen: */
   position: fixed;
@@ -47,9 +47,9 @@ img {
 }
 
 #dialog_title {
-  width:55%;
+  width:70%;
   padding-top: 2%;
-  margin-left:30%;
+  margin-left: 18%;
   float:left;
   display:table-cell;
 }
@@ -57,18 +57,18 @@ img {
 #dialog_title h2{
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  font-size: 1.75em;
+  font-size: 1.65em;
   color: #292929;
 }
 
 #close_button {
-  text-align:center; float:right; color:gray; cursor:pointer;
+  text-align:center; float:right; color:black; cursor:pointer;
   background: transparent none repeat scroll 0% 0%;
   border: 0px none;
   margin:none; margin-left:10px;
   padding-right: 30px;
   padding-top: 1.2%;
-  font-size: 35px; font-weight: 400; font-family: monospace;
+  font-size: 35px; font-weight: 400; font-family: sans-serif;
   transition: all .3s ease;
 }
   
@@ -82,8 +82,8 @@ img {
 
 #dialog_img img {
   position: relative;
-  top: 50%; left:50%;
-  margin: 8% 0 0 -35%;
+  top: 45%; left:50%;
+  margin: 3% 0 0 -35%;
 }
 
 #dialog_text {
@@ -97,17 +97,21 @@ img {
 }
 
 #dialog_text p {
+  text-align: justify;
+  padding-top: 10px;
+  color: black;
+  font-weight: 400;
   font-size:10pt;
-  font-weight: 700;
   font-family: 'Open Sans', sans-serif;
 }
 
 #dialog_audio {
   clear:both;
-  padding: 1%;
+  position:relative;
+  left:40%;
   padding-bottom:2%;
   width:55%;
-  float:right;
+  float:left;
   display:table-cell;
 }
 
