@@ -1,10 +1,7 @@
-4. Fix issue on browsing that mapa-sonoro.html is twice on the browsing history / avoid leaving a hash at the end fo the URL
-9. Add loading on dialog if needed
 10. clean repo
 11. see if we can have zoom
 12. Add helping text after 2 secs of hovering
-15. check audio container and close button with small screens
-16. Volver a poner autoplay
-17. Start with the map and after make it dissapear / put zoom on the top left and show places
 19. open issue in https://github.com/asvd/dragscroll for body without viewport in firefox?
 21. Detectar y evitar usuarios sin HTML 5 o desde disp. móvil
+22. Start website moving scroll to starting point (revisited)
+23. add circular border/shadow/darker mask to places, specially for white ones.
