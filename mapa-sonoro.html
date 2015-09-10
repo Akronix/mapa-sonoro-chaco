@@ -7,10 +7,9 @@
   <meta name="author" content="Abel 'Akronix' Serrano Juste">
   <meta name="author" content="Andrés Juste Hernández">
   <title>Bitácora sonora</title>
-  <style>       
+  <style type="text/css">       
     body {
       background-image: url("textura.jpg");
-      background-color: white;
       background-repeat: repeat;
     }
   </style>
@@ -32,23 +31,23 @@
 
 <div id=background_container style="position:fixed;width:100vw;height:100vh; z-index:3; display:none"></div>
 
-<!-- Dialog info starts here -->    
+<!-- Dialog starts here -->    
 <div id="dialog" style="display:none; z-index:4; background-color:white;" >
   
   <div id="dialog_header">
     <button id="close_button" onclick="close_dialog()">x</button>
     <div id="dialog_title"></div>
-    
   </div>
+
   <div id="dialog_img">
     <img id="dialog_img_src" width=75% height=75% ></img>
   </div>
+
   <div id="dialog_text"></div>
   
-  <div id="dialog_audio" >
+  <div id="dialog_audio">
     <audio controls autoplay id="dialog_audio_player">
-      <!--<source id="dialog_audio_src" type="audio/mpeg">-->
-      Audio no soportado
+      HTML5 Audio no soportado :(
     </audio>
   </div>
 </div>

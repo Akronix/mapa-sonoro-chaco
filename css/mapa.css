@@ -22,12 +22,13 @@ img {
   z-index: 2;
   width: 200px;
   height: 200px;
-  box-shadow: none;
 }
 
 #dialog {
-  border: medium solid black;
+  border: medium solid #292929;
   border-radius: 15px;
+  display:table;
+  cursor: auto;
   /* Centering on the screen: */
   position: fixed;
   top:15%;
@@ -35,8 +36,6 @@ img {
   width:70%; 
   min-height:200px;
   margin: 0 0 0 -35%;
-  display:table;
-  cursor: auto;
 }
 
 #dialog_header {
@@ -58,18 +57,20 @@ img {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 1.65em;
-  color: #292929;
+  color: black;
 }
 
 #close_button {
-  text-align:center; float:right; color:black; cursor:pointer;
-  background: transparent none repeat scroll 0% 0%;
-  border: 0px none;
+  float:right;
+  color:#292929;
+  cursor:pointer;
   margin:none; margin-left:10px;
   padding-right: 30px;
   padding-top: 1.2%;
   font-size: 35px; font-weight: 400; font-family: sans-serif;
-  transition: all .3s ease;
+  /* Getting rid of button style */
+  background:transparent;
+  border: 0px none;
 }
   
 #dialog_img {
@@ -93,7 +94,6 @@ img {
   float:left;
   width:55%;
   min-height:30%;
-  cursor:auto;
 }
 
 #dialog_text p {
@@ -107,34 +107,18 @@ img {
 
 #dialog_audio {
   clear:both;
+  float:left;
   position:relative;
+  display:table-cell;
   left:40%;
   padding-bottom:2%;
   width:55%;
-  float:left;
-  display:table-cell;
 }
 
 #dialog_audio audio {
   position:relative;
   left:0%;
   cursor: pointer;
-}
-
-#transbox {
-  position: fixed;
-  top:5%;
-  left:5%;
-  bottom:5%;
-  right: 5%;
-  display:block;
-  height: 90%;
-  width: 90%;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-  min-height: 250px;
-  background-color: black;
-  border-radius: 5px;
 }
 
 .dragscroll {

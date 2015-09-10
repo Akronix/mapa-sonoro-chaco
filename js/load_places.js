@@ -1,5 +1,5 @@
 $(function() {
-  var x = 8, y = 8; /* off set for moving images to the middle of the coords set */
+  var x = 8, y = 8; /* offset for putting images on the middle of the coords defined. They are half of height/width place points */
   
   var places = [
     {"cod": "1A", "title":"Relato de torturas durante la dictadura (1976-1983) en La Casa por la Memoria", "name":"1A_TORTURAS", "left":1075-x,"top":1405-y},
@@ -78,19 +78,7 @@ $(function() {
       document.getElementById('include_places').innerHTML += output;
       document.getElementById(element["cod"]).onload = function(){
         $('#'+element["cod"]+'_span').fadeIn('slow');
-        //document.getElementById('pop').play()
-        }
-      
-      /* onload = function(){
-        //$(element["cod"]+'_lnk').show();
-        placesCont = $('#include_places');
-        placesCont.queue("popQueue",popImage('#'+element["cod"]+'_span'));
-        setTimeout(function() {
-          placesCont.dequeue("popQueue");
-        }, 1000);
-        //console.log(document.getElementById(element["cod"]+'_lnk'));
-        //console.log('Image ' + element["cod"] + ' loaded')
-      };*/
+        }      
     }
   );
 }());
