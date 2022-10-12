@@ -1,6 +1,6 @@
 # mapa-sonoro-chaco
-* English : Website of a map of sounds of a trip around Chaco Ra'anga area in Latin America.
-* Español : Sitio web de un mapa sonoro de la zona del Chaco Ra'anga en latinoamérica.
+* English : Website of a map of sounds of a trip around the "The big Chaco" area in Latin America.
+* Español : Sitio web de un mapa sonoro de la zona de "el Gran Chaco" en latinoamérica.
 
 You can watch it live here: https://akronix.github.io/mapa-sonoro-chaco/
 
